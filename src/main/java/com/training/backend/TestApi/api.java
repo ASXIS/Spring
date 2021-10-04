@@ -14,13 +14,10 @@ import java.io.IOException;
 @RequestMapping("/test")
 public class api{
 
-//    @Autowired
-//    private TestBusiness business;
     private final TestBusiness business;
     public api(TestBusiness business) {
         this.business = business;
     }
-
 
     @GetMapping
     public TestResponse test() {
@@ -30,7 +27,6 @@ public class api{
         return response;
 
     }
-
 
     @PostMapping
     @RequestMapping("/register")
@@ -43,7 +39,5 @@ public class api{
             return ResponseEntity.status(HttpStatus.EXPECTATION_FAILED).build();
         }
     }
-
-
 }
 
