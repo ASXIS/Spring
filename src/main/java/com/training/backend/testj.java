@@ -1,7 +1,7 @@
 package com.training.backend;
 
 import java.util.Scanner;
-//"test"
+//"test from local"
 public class testj {
     public static void main(String[] args) {
         int in;
